@@ -1,0 +1,96 @@
+.register-form-container{
+    padding: 20px 32px 20px 32px;
+}
+.register-fields-flex{
+    display: flex; 
+    gap: 20px; 
+}
+.register-fields-flex .login-inp{
+    flex-basis: 50%;
+}
+.login-inp{
+    margin-bottom: 16px;
+}
+.login-inp label{
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+.login-inp input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border: 1px solid #449552;
+    border-radius: 5px;
+}
+.register-form-btn-warp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-form-btn-warp button{
+    display: flex;
+    align-items: center;
+    background: #449552;
+    outline: none;
+    border: none;
+    border: 3px solid #449552;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 4px 32px 2px 32px;
+    margin-top: 12px;
+}
+.register-form-btn-warp button:hover{
+    color: #449552;
+    background: transparent;
+    transition: 0.3s;
+}
+.register-form-btn-warp button span{
+    display: block;
+    margin-left: 10px;
+}
+.react-tel-input .form-control {
+    padding-left: 48px !important;
+}
+.react-tel-input .form-control {
+    border: solid 1px #449552 !important;
+    width: 100% !important;
+    /* height: 40px !important; */
+}
+
+.react-tel-input .form-control:focus {
+    box-shadow: none !important;
+}
+
+.react-tel-input .flag-dropdown {
+    border: solid 1px #449552 !important;
+    border-right: 0px !important;
+}
+
+@media (max-width:480px){
+.register-fields-flex {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+}
+.login-inp label {
+    margin-bottom: 5px;
+    font-size: 14px !important;
+    line-height: 1;
+    display: block;
+    font-weight: 600;
+}
+.register-form-container {
+    padding: 10px 16px 10px 16px;
+}
+.register-form-btn-warp button {
+  font-size: 20px;
+}
+}

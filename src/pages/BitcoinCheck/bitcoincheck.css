@@ -1,0 +1,155 @@
+.bitcoin-check-root-container {
+    background-color: linear-gradient(180deg,#7df2fd 1.68%,#fff 48.32%,#fed480);
+    min-height: 100vh;
+    background: url(../../assets/images/checkout-bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'rajdhani';
+}
+.bitcoin-check-inner{
+    width: 100%;
+    max-width: 800px;
+}
+.bitcoin-check-inner .checkout-heading{
+    color: #449552;
+    text-align: center;
+    font-weight: 700;
+    -webkit-text-stroke: 2.5px;
+    letter-spacing: 2px;
+}
+.bitcoin-check-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.bitcoin-left-warp{
+    flex-basis: 50%;
+}
+.bitcoin-right-warp{
+    flex-basis: 50%;
+}
+.need-help{
+    background: #d2eab5;
+    border-radius: 5px;
+    max-width: 230px;
+    margin-left: 16px;
+    padding: 16px;
+    margin-top: 16px;
+}
+.need-help h4{
+    color: #449552;
+    font-weight: 700;
+    line-height: 0.5;
+}
+.need-help span{
+    -webkit-text-stroke: 0.4px;
+    color: #7f7f7f;
+    font-weight: 700;
+}
+.bitcoin-left-warp .bitcoin-img img{
+    width: 100%;
+    max-width: 250px;
+}
+.bitcoin-right-warp h4{
+    color: #449552;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+.bitcoin-address-details{
+    margin-bottom: 16px;
+}
+.bitcoin-address-details h5{
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+}
+.bitcoin-address-details span{
+    font-size: 22px;
+    line-height: 0.6;
+}
+.bitcoin-address-details span svg{
+    margin-left: 12px;
+}
+.verification-btn button{
+    display: flex;
+    align-items: center;
+    background-color: #429763;
+    outline: none;
+    border: none;
+    border: 3px solid #429763;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'rajdhani';
+    padding: 8px 28px;
+}
+.verification-btn button span{
+    display: block;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+.verification-btn button:hover{
+    color:#429763;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.checkout-truck{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+.checkout-truck img{
+    width: 100%;
+    max-width: 230px;
+    
+}
+
+@media (max-width:880px){
+   .checkout-truck{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.checkout-truck img{
+    max-width: 150px; 
+    display: none; 
+} 
+.bitcoin-check-inner{
+    padding: 50px 12px;
+}
+}
+@media (max-width:680px){
+.bitcoin-check-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.bitcoin-left-warp .bitcoin-img img{
+    width: 100%;
+    max-width: 180px;
+}
+.bitcoin-left-warp{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.bitcoin-right-warp{
+    flex-basis: 50%;
+    text-align: center;
+}
+.verification-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

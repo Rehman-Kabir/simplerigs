@@ -1,0 +1,328 @@
+.dashboard-root-container{
+    min-height: 100vh;
+    background: linear-gradient(180deg,#7df2fd 1.68%,#fff 48.32%,#fed480);
+    padding: 32px;
+    display: flex;
+    font-family: 'rajdhani';
+}
+.sidebar {
+	flex-basis: 300px;
+	transition: 0.5s;
+}
+.main-container{
+	flex-basis: 75%;
+	transition: 0.5s;
+}
+/* .nav-container{
+    border-radius: 10px;
+    min-height: 880px;
+    width: 250px;
+    background-color: #e8f4ef;
+    background-image: url(../../assets/images/nav-background.png);
+    background-size: 100% 100%;
+}
+.nav-wapper{
+    padding-top: 50px;
+}
+.nav-link-wrap{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-link-wrap li a{
+    text-decoration: none;
+    padding: 8px 32px;
+    color: #595a5b;
+    font-size: 20px;
+    -webkit-text-stroke: 1px;
+    border-radius: 8px;
+}
+.nav-link-wrap li a.active{
+    color: #fff;
+    background-color: #8bd66c;
+}
+.nav-link-wrap li a.active:hover{
+   border: 0;
+}
+.nav-link-wrap li{
+    margin: 16px 0px;
+}
+.nav-link-wrap li a:hover{
+    border: 2px solid #8bd66c;
+} */
+
+/* Main Dashboard Area */
+.dashboard-container .main-heading{
+    -webkit-text-stroke: 2px;
+}
+
+/* Main Plan Area */
+.plan-payout-container {
+    display: flex;
+    max-width: 1280px;
+}
+.plan-container{
+    padding-top: 10px;
+    flex-basis: 55%;
+}
+.plan-items{
+    margin-top: 75px;
+}
+.plan-container .plan-heading{
+    color: #49925B;
+    font-weight: 700;
+}
+.plan {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: -50px;
+    position: relative;
+}
+
+.plan p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.plan-left {
+    /* margin-right: 10px; */
+}
+
+.plan .plan-content {
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    /* width: 230px; */
+    width: 100%;
+    max-width: 400px;
+    padding: 0px 16px;
+}
+
+.plan svg {
+    width: 400px;
+    max-height: 200px;
+}
+.add-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -32px;
+    z-index: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.add-btn-wrap .link-wrap {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 0px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn-wrap .link-wrap a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.add-btn-wrap .link-wrap:hover {
+    background-color: #49925B;
+    transition: .5s;
+}
+
+.add-btn-wrap .link-wrap:hover a {
+    color: white !important;
+}
+.payout-container{
+    padding-top: 10px;
+}
+.payout-heading {
+    color: #49925B;
+    font-weight: 700;
+}
+
+.payout ul {
+    color: #49925B;
+    margin-top: 16px;
+}
+.payout ul li{
+    margin-top: 18px;
+}
+.payout h4 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: black;
+    -webkit-text-stroke: 0.5px;
+}
+
+.payout p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px;
+    color: #7F7F7F;
+}
+
+.revenue h3 {
+    color: #49925b;
+    font-weight: 700;
+}
+.revenue {
+    margin-top: 100px;
+}
+
+.revenue table {
+    width: 95%;
+    display: block;
+    overflow-x: auto;
+}
+
+.revenue table thead {
+    border-bottom: solid 2px #D8D8D8;
+    width: 700px;
+    display: block;
+}
+
+.revenue table thead tr {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    -webkit-text-stroke: 0.5px;
+    display: table;
+    width: 100%;
+}
+
+.revenue table thead tr th {
+    width: 20%
+}
+
+.revenue table tbody {
+    display: block;
+    height: 90px;
+    overflow-y: scroll;
+    width: 700px;
+}
+
+.revenue table tbody tr {
+    border-bottom: solid 1px #D8D8D8;
+    font-size: 18px;
+    color: #7F7F7F;
+    display: table;
+    width: 100%;
+}
+
+.revenue table tbody tr td {
+    width: 20%;
+}
+
+.revenue table tr .first-field {
+    font-weight: 700;
+    -webkit-text-stroke: 0.1px;
+}
+
+
+@media (max-width:1100px){
+    .sidebar {
+        display: none;
+        transition: 0.5s;
+    }
+    .main-container{
+        flex-basis: 100%;
+    }
+}
+@media (max-width:850px){
+    .plan-payout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.plan-container {
+    margin-bottom: 24px;
+}
+.revenue {
+    max-width: 550px;
+    margin: 50px auto 0px auto;
+}
+}
+@media (max-width:650px){
+.revenue {
+    max-width: 450px;
+    margin: 50px auto 0px auto;
+}
+}
+@media (max-width:550px){
+.revenue {
+    max-width: 350px;
+    margin: 24px auto 0px auto;
+}
+}
+@media (max-width:480px){
+    .dashboard-root-container {
+        padding: 32px 12px;
+    }
+    .plan-items {
+    margin-top: 32px;
+}
+    .plan {
+    margin-top: -24px;
+}
+ .plan .plan-content {
+    width: 100%;
+    max-width: 300px;
+    padding: 0px 16px;
+}
+
+.plan svg {
+    width: 300px;
+    max-height: 100px;
+}
+.add-btn-wrap {
+    margin-top: -28px;
+    max-width: 300px;
+}
+.revenue {
+    max-width: 350px;
+    margin: 50px auto 0px auto;
+}
+}
+@media (max-width:380px){
+    .dashboard-root-container {
+        padding: 32px 12px;
+    }
+    .plan-items {
+    margin-top: 32px;
+}
+    .plan {
+    margin-top: -24px;
+}
+ .plan .plan-content {
+    width: 100%;
+    max-width: 275px;
+    padding: 0px 16px;
+}
+
+.plan svg {
+    width: 275px;
+    max-height: 100px;
+}
+.add-btn-wrap {
+    margin-top: -28px;
+    max-width: 275px;
+}
+.revenue {
+    max-width: 350px;
+    margin: 50px auto 0px auto;
+}
+}

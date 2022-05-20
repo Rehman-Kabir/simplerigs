@@ -1,0 +1,101 @@
+.company-container{
+    font-family: 'rajdhani';
+}
+.faq-hero{
+    background: url(../../assets/images/ask-header.png);
+    background-size: 100% 100%;
+    min-height: 65vh;
+}
+.hero-head-wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+}
+.hero-head-wrap h1{
+    -webkit-text-stroke: 2px;
+    color: #1e3b39;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+.comp-hamburger {
+    cursor: pointer;
+    padding-top: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 16px;
+}
+
+.comp-hamburger div {
+    height: 4px;
+    width: 30px;
+    background-color: #449552;
+    margin: 0 0 4px 0px;
+    transition: all 0.3s ease;
+}
+
+.ask-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.ask-content-inner {
+    width: 80%;
+}
+
+.ask-content h3 {
+    font-weight: 800;
+    -webkit-text-stroke: 1px;
+    margin-bottom: 20px;
+}
+
+.ask-content ul {
+    color: #449552;
+}
+
+.ask-content ul p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #7f7f7f;
+    letter-spacing: 1px;
+}
+
+.first-part {
+    padding: 30px 10px;
+    border-bottom: solid 2px #d8d8d8;
+}
+
+.second-part {
+    padding: 30px 10px;
+    border-bottom: solid 2px #d8d8d8;
+}
+
+.third-part {
+    padding: 30px 10px;
+    border-bottom: solid 2px #d8d8d8;
+}
+
+.fourth-part {
+    padding: 70px 10px;
+}
+
+@media (max-width:880px){
+    .ask-content-inner {
+    width: 100%;
+}
+}
+@media (max-width:680px){
+.hero-head-wrap h1{
+    -webkit-text-stroke: 2px;
+    color: #1e3b39;
+    font-size: 32px;
+}
+.faq-hero{
+    background: url(../../assets/images/ask-header.png);
+    background-size: cover;
+    min-height: 65vh;
+}
+}
