@@ -1,16 +1,19 @@
 .mobsidebar-container{
-    min-height: calc(100vh - 210px);;
+    height: 100vh;
     background: rgba(255, 255, 255, 0.445);
     position: fixed;
     width: 100%;
     top: 0;
+    /* bottom: 0; */
     z-index: 1000;
+    /* overflow-y: auto; */
     display: none;
-    /* max-height:  */
 }
 .mob-nav-container{
     min-height: 100vh;
+    /* min-height: 800px; */
     width: 260px;
+    /* overflow-y: auto; */
     background-color: #e8f4ef;
     background-image: url(../../assets/images/nav-background.png);
     background-size: cover;
@@ -68,7 +71,20 @@
     display: block;
 }
 
+@media (max-width:880px){
+    .mobsidebar-container{
+    overflow-y: auto;
+}
+.mob-nav-container{
+    min-height: 768px;
+    overflow-y: auto;
+}
+}
 @media (max-width:480px){
+    .mob-nav-container{
+    min-height: 100vh;
+    overflow-y: auto;
+}
     .mob-nav-link-wrap li a{
         font-size: 16px;
         line-height: 1;

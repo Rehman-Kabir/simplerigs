@@ -551,10 +551,14 @@ max-width: 800px;
     display: flex;
 }
 .coin-icon{
-    align-self: flex-end;
-    margin-right: 16px;
+    display: flex;
 }
-.coin-icon img{
+
+.invest-coin-img{
+    align-self: center;
+    margin-right: 32px;
+}
+.invest-coin-img img{
     width: 100%;
     max-width: 150px;
 }
@@ -562,7 +566,6 @@ max-width: 800px;
     color: #f2fff5;
     font-size: 28px;
     line-height: 1;
-    /* font-weight: 700; */
     letter-spacing: 1px;
     font-family: 'rajdhani';
     text-transform: uppercase;
@@ -580,17 +583,24 @@ max-width: 800px;
 .invest-content{
     display: flex;
 }
+.invest-content.hide-desk{
+    display: none;
+}
 .invest-content.last{
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .invest-content span.first{
-    margin-left: 55px;
+    margin-left: 35px;
 }
 .invest-content span.second{
     margin-left: 35px;
+    margin-top: 20px;
 }
 .invest-content span.third{
-    margin-left: 48px;
+    margin-left: 35px;
+}
+.invest-content .third-mob{
+    display: none;
 }
 .try-now-wrap h1{
     color: #f2fff5;
@@ -677,20 +687,33 @@ max-width: 800px;
         line-height: 1;
         margin-top: 0;
     }
-    .invest-content span.first {
-        margin-left: 32px;
+    .invest-coin-img img{
+        position: relative;
+        left: -24px;
     }
-    .invest-content span.second {
-        margin-left: 19px;
+    .invest-coin-img{
+        margin-right: 24px;
+    }
+    .invest-content span.first{
+        margin-left: 24px;
+        margin-top: 16px;
+    }
+    .invest-content span.second{
+        margin-left: 24px;
+        margin-top: 8px;
     }
     .invest-content.last {
-        margin-left: 79px;
+        margin-left: 105px;
     }
     .invest-content.last h1{
         margin-left: 27px;
     }
     .invest-content span.third {
         margin-left: 23px;
+    }
+    .invest-heading-data h1{
+        margin-top: 16px;
+        line-height: 1;
     }
 }
 @media (max-width:480px){
@@ -701,12 +724,50 @@ max-width: 800px;
         max-width: 280px;
         margin: 0;
     }
+    .invest-coin-img img{
+        position: relative;
+        left: 0px;
+    }
+    .invest-coin-img{
+        margin-right: 12px;
+    }
     .invest-container {
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
     }
+    .invest-content span.first{
+        margin-left: 14px;
+        margin-top: 12px;
+    }
+    .invest-content span.second{
+        margin-left: 14px;
+        margin-top: 8px;
+    }
+    /* .invest-content.last{display: none;}
+    .invest-content.hide-desk{
+        display: block;
+    }
+    .invest-content .hide-heading{
+        margin-top: 32px;
+    }
+    .invest-content .third-mob{
+        display: block;
+        margin-left: 14px;
+        margin-top: 8px;
+    } */
+    .invest-content.last {
+        margin-left: 85px;
+        margin-top: 8px;
+    }
+    .invest-content.last h1{
+        margin-left: 27px;
+    }
+    .invest-content span.third {
+        margin-left: 23px;
+    }
 }
+
 /* Calculator Section*/
 
 .calculator-container{
@@ -775,8 +836,11 @@ max-width: 800px;
     font-size: 28px;
     margin: 8px 0px 0px 0px;
 }
-.calc-wal-heading{
+.calc-wal-heading span{
     margin-bottom: 16px;
+    opacity: 0;
+    transform: scale(0);
+    cursor: default;
 }
 .calc-wal-heading h1{
  -webkit-text-stroke: 1.5px;
@@ -886,6 +950,9 @@ max-width: 800px;
         margin: 0 auto;
         margin-top: 50px;
 }
+.calc-wal-heading span{
+    display: none;
+}
 }
 @media (max-width:680px){
     .calculator-container .calc-wallet-wrap{
@@ -974,7 +1041,18 @@ max-width: 800px;
     right: 4px;
 }
 }
-
+@media (max-width:380px){
+.calc-field input {
+    font-size: 16px;
+    padding: 16px;
+}
+.form-field label {
+    font-size: 16px;
+}
+.form-wrap .flex-mob {
+    gap: 12px;
+}
+}
 /* Footer Container */
 .home-footer{
     background: url(../../assets/images/footer.png);
@@ -1258,6 +1336,8 @@ max-width: 800px;
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 20px;
+    padding-right: 20px;
+    min-height: 400px;
 }
 
 
@@ -1279,13 +1359,14 @@ max-width: 800px;
 }
 
 .aboutus .right-inner ul li::marker {
-    font-size: 20px;
+    /* font-size: 18px;
+    margin-top: 10px; */
 }
 
 .aboutus .right-inner p {
     text-align: start;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     margin-bottom: 5px;
     font-family: montserrat;

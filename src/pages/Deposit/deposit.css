@@ -251,3 +251,16 @@
     margin-bottom: 16px;
 }
 }
+
+@media (max-width:380px){
+.dash-form-field label {
+    font-size: 16px;
+}
+.dash-calc-field input {
+    font-size: 16px;
+    padding: 14px;
+}
+.form-wrap .flex-mob {
+    gap: 12px;
+}
+}

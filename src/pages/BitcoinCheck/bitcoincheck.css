@@ -4,10 +4,46 @@
     background: url(../../assets/images/checkout-bg.png);
     background-position: center;
     background-size: 100% 100%;
+    font-family: 'rajdhani';
+}
+.bitcoin-checkout-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* min-height: 100vh; */
+}
+.checkout-login-btn{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 12px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.checkout-login-btn button{
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    border: 3px solid #429763;
+    border-radius: 10px;
+    color: #429763;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
     font-family: 'rajdhani';
+    padding: 3px 32px;
+}
+.checkout-login-btn button span{
+    display: block;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+.checkout-login-btn button:hover{
+    background-color: #429763;
+    color: #fff;
+    transition: .3s;
 }
 .bitcoin-check-inner{
     width: 100%;

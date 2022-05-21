@@ -60,7 +60,7 @@
 }
 
 /* Main Plan Area */
-.plan-payout-container {
+/* .plan-payout-container {
     display: flex;
     max-width: 1280px;
 }
@@ -77,37 +77,29 @@
 }
 .plan {
     display: flex;
-    /* justify-content: center; */
     margin-top: -50px;
     position: relative;
 }
-
 .plan p {
     color: white;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0px;
 }
-.plan-left {
-    /* margin-right: 10px; */
-}
-
 .plan .plan-content {
     display: flex;
     position: absolute;
     margin-top: 10px;
     cursor: pointer;
     justify-content: space-between;
-    /* width: 230px; */
     width: 100%;
     max-width: 400px;
     padding: 0px 16px;
 }
-
 .plan svg {
     width: 400px;
     max-height: 200px;
-}
+} */
 .add-btn-wrap {
     display: flex;
     justify-content: center;

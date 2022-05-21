@@ -298,16 +298,30 @@ const Landing = () => {
                 <div className="invest-wrap">
                     <div className="invest-detail">
                         <div className="coin-icon">
-                            <img src={CoinIcon} alt="coin" />
-                        </div>
-                        <div className="invest-content-wrap">
-                            <div className="invest-content">
-                                <h1>652</h1>
-                                <span className='first'>INVESTORS <br/>JOINED  TODAY</span>
+                            <div className="invest-coin-img">
+                                <img src={CoinIcon} alt="coin" />
                             </div>
-                            <div className="invest-content">
-                                <h1>1.12X</h1>
-                                <span className='second'>AVERAGE INCOMEPER <br /> MONTH</span>
+                            <div className="invest-heading-data">
+                                <div className="invest-content">
+                                    <h1>652</h1>
+                                </div>
+                                <div className="invest-content">
+                                    <h1>1.12X</h1>
+                                </div>
+                                <div className="invest-content hide-desk">
+                                    <h1 className='hide-heading'>$478.100</h1>
+                                </div>
+                            </div>
+                            <div className="invest-text-data">
+                                <div className="invest-content">
+                                    <span className='first'>INVESTORS <br/>JOINED  TODAY</span>
+                                </div>
+                                <div className="invest-content">
+                                    <span className='second'>INVESTORS <br/>JOINED  TODAY</span>
+                                </div>
+                                <div className="invest-content">
+                                    <span className='third-mob'>TODAY <br /> PAYOUTS</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -432,11 +446,11 @@ const Landing = () => {
                             <Carousel.Item >
                                 <Carousel.Caption>
                                     <ul>
-                                        <li><p>To yeild the maxium coins.Neque porro</p></li>
-                                        <li><p>Quisquam est qui dolorem</p></li>
-                                        <li><p>Ipsum quia dolor sit amet, consectetur,</p></li>
-                                        <li><p>Adipisci veli, porro quisquam</p></li>
-                                        <li><p>Lorem ipsum quia dolor sit amet</p></li>
+                                        <li><p>Learn more about company’s startup research and investments,</p></li>
+                                        <li><p>guarantees and attitude to ecology issues &amp; security matter</p></li>
+                                        <li><p>Our company was founded in 2017 during the original mining boom and rapid private mining farms development</p></li>
+                                        <li><p>All these settings with software and hardware were looking scary and annoying.</p></li>
+                                        <li><p>That's why we've decided to make it simple. You're just a few clicks from Your first mining rig.</p></li>
                                     </ul>
                                 </Carousel.Caption>
                             </Carousel.Item  >
@@ -444,11 +458,11 @@ const Landing = () => {
                                 <Carousel.Caption>
                                     <div>
                                         <ul>
-                                            <li><p>To yeild the maxium coins.Neque porro</p></li>
-                                            <li><p>Quisquam est qui dolorem</p></li>
-                                            <li><p>Ipsum quia dolor sit amet, consectetur,</p></li>
-                                            <li><p>Adipisci veli, porro quisquam</p></li>
-                                            <li><p>Lorem ipsum quia dolor sit amet</p></li>
+                                            <li><p>We do care about the environment.</p></li>
+                                            <li><p>We are using 100% renewable energy sources.</p></li>
+                                            <li><p>Our data centers are located at Linde in the Northern Cape and Dreunberg in the Eastern Cape, both sun drenched regions boasting one of the best conditions for solar power in the world.</p></li>
+                                            <li><p>We cooperate only with the largest suppliers.</p></li>
+                                            <li><p>Procurement of equipment is calculated in the tens of millions</p></li> 
                                         </ul>
                                     </div>
                                 </Carousel.Caption>
@@ -456,11 +470,9 @@ const Landing = () => {
                             <Carousel.Item >
                                 <Carousel.Caption>
                                     <ul>
-                                        <li><p>To yeild the maxium coins.Neque porro</p></li>
-                                        <li><p>Quisquam est qui dolorem</p></li>
-                                        <li><p>Ipsum quia dolor sit amet, consectetur,</p></li>
-                                        <li><p>Adipisci veli, porro quisquam</p></li>
-                                        <li><p>Lorem ipsum quia dolor sit amet</p></li>
+                                        <li><p>The main idea was to make mining accessible to anyone - from a guy who was just starting his research and a way into the cryptocurrencies world, to a major investor who is looking to multiply his capital.</p></li>
+                                        <li><p>For all those reasons, we can guarantee our customers high income and low costs.</p></li>
+                                        <li><p>Regular mining requires certain knowledge and know-how and large starting investments, so it was pretty hard for ordinary persons to start from a scratch.</p></li>
                                     </ul>
                                 </Carousel.Caption>
                             </Carousel.Item>
